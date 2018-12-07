@@ -8,15 +8,18 @@ body, html {
     font-size: 1em;
     background-color: #272C34;
     font-family: 'Titillium Web', 'Open Sans', sans-serif;
-    padding: 1em;
+    padding: .5em;
 }
 .wrapper {
+    display: flex;
     flex-direction: column;
 }
 .title {
+    display: flex;
+    flex-direction: row;
     user-select: none;
     font-family: 'Overpass Mono', monospace;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 300;
     letter-spacing: .01em;
     max-width: 800px;
@@ -31,9 +34,8 @@ mark.prompt {
     color: #C678DD;
     background: none;
 }
-mark.cursor {
-    color: rgb(197, 200, 206);
-    background: none;
+#cursor {
+    animation: blink 1.2s step-end infinite;
 }
 a:link {
     color: rgb(197, 200, 206);
@@ -50,3 +52,11 @@ a:visited {
     color: rgb(197, 200, 206);
     text-decoration: none;
 }
+@keyframes blink {
+    from, to {
+        color: transparent;
+      }
+      50% {
+        color: rgb(168, 171, 177);
+      }
+    }
