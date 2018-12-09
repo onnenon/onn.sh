@@ -22,11 +22,10 @@ body, html {
     font-size: 12vh;
     font-weight: 300;
     letter-spacing: .01em;
-    max-width: 800px;
 }
 .links{
     flex-direction: row;
-    font-size: 1.2em;
+    font-size: 4vh;
     padding: .3em;
     justify-content: flex-start;
 }
@@ -61,7 +60,7 @@ a:visited {
       }
     }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     .title {
         font-size: 15vh;
     }
