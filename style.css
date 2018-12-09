@@ -62,7 +62,7 @@ a:visited {
 
 @media all and (max-width: 800px) {
     .title {
-        font-size: 15vw;
+        font-size: 12vw;
     }
     .links {
         font-size: 6vw;
