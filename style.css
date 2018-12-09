@@ -19,13 +19,13 @@ body, html {
     flex-direction: row;
     user-select: none;
     font-family: 'Overpass Mono', monospace;
-    font-size: 12vh;
+    font-size: 8vw;
     font-weight: 300;
     letter-spacing: .01em;
 }
 .links{
     flex-direction: row;
-    font-size: 4vh;
+    font-size: 2vw;
     padding: .3em;
     justify-content: flex-start;
 }
@@ -62,9 +62,9 @@ a:visited {
 
 @media screen and (max-width: 700px) {
     .title {
-        font-size: 15vh;
+        font-size: 15vw;
     }
     .links {
-        font-size: 5vh;
+        font-size: 5vw;
     }
 }
