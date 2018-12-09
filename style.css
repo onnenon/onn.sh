@@ -62,7 +62,10 @@ a:visited {
     }
 
 @media screen and (max-width: 800px) {
-    .title, .links {
-        font-size: 5em;
+    .title {
+        font-size: 15vh;
+    }
+    .links {
+        font-size: 5vh;
     }
 }
