@@ -19,13 +19,13 @@ body, html {
     flex-direction: row;
     user-select: none;
     font-family: 'Overpass Mono', monospace;
-    font-size: 8vw;
+    font-size: 5vw;
     font-weight: 300;
     letter-spacing: .01em;
 }
 .links{
     flex-direction: row;
-    font-size: 2vw;
+    font-size: 1vw;
     padding: .3em;
     justify-content: flex-start;
 }
