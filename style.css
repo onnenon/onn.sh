@@ -60,11 +60,11 @@ a:visited {
       }
     }
 
-@media screen and (max-width: 900px) {
+@media all and (max-width: 800px) {
     .title {
         font-size: 15vw;
     }
     .links {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 }
