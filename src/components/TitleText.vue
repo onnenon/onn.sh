@@ -1,7 +1,8 @@
 <template>
   <div class="title">
-    <mark class="prompt">$</mark> ./onn.sh
-    <div id="cursor" v-show="true">&#9610;</div>
+    <mark class="prompt">$</mark>
+    {{text}}
+    <div id="cursor">&#9610;</div>
   </div>
 </template>
 
@@ -27,5 +28,17 @@ export default {
 mark.prompt {
   color: #c678dd;
   background: none;
+}
+#cursor {
+  animation: blink 1.2s step-end infinite;
+}
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: rgb(168, 171, 177);
+  }
 }
 </style>
