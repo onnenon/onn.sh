@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view />
   </div>
 </template>
@@ -27,5 +23,14 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+body,
+html {
+  display: flex;
+  color: #f8f8f2;
+  font-size: 1em;
+  background-color: #272c34;
+  font-family: "Titillium Web", "Open Sans", sans-serif;
+  padding: 0.5em;
 }
 </style>

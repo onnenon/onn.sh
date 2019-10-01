@@ -16,7 +16,8 @@ export default {
   name: "home",
   components: {
     HelloWorld,
-    ContactLinks
+    ContactLinks,
+    TitleText
   }
 };
 </script>
