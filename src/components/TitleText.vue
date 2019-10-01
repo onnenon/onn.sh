@@ -28,6 +28,10 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+@import url("https://fonts.googleapis.com/css?family=Overpass+Mono:300,400");
+
 .title {
   display: flex;
   flex-direction: row;
