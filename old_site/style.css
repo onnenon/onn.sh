@@ -19,16 +19,15 @@ body, html {
     flex-direction: row;
     user-select: none;
     font-family: 'Overpass Mono', monospace;
-    font-size: 4em;
+    font-size: 5vw;
     font-weight: 300;
     letter-spacing: .01em;
-    max-width: 800px;
 }
 .links{
     flex-direction: row;
-    font-size: 1.2em;
+    font-size: 1vw;
     padding: .3em;
-    text-align: center;
+    justify-content: flex-start;
 }
 mark.prompt {
     color: #C678DD;
@@ -60,3 +59,12 @@ a:visited {
         color: rgb(168, 171, 177);
       }
     }
+
+@media all and (max-width: 800px) {
+    .title {
+        font-size: 14vw;
+    }
+    .links {
+        font-size: 6vw;
+    }
+}
