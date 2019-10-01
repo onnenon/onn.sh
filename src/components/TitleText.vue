@@ -1,7 +1,7 @@
 <template>
   <div class="title">
     <mark class="prompt">$</mark>
-    {{text}}
+    {{currentText}}
     <div id="cursor">&#9610;</div>
   </div>
 </template>
@@ -9,8 +9,20 @@
 <script>
 export default {
   name: "TitleText",
+  data() {
+    return { currentText: "" };
+  },
   props: {
     text: String
+  },
+  created() {
+    let time = 0;
+    [...this.text].forEach(char => {
+      setTimeout(() => {
+        console.log(char);
+        this.currentText += char;
+      }, (time += Math.floor(Math.random() * 75) + 40));
+    });
   }
 };
 </script>
@@ -24,6 +36,7 @@ export default {
   font-size: 5vw;
   font-weight: 300;
   letter-spacing: 0.01em;
+  color: #f8f8f2;
 }
 mark.prompt {
   color: #c678dd;
