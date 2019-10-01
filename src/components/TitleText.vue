@@ -48,6 +48,7 @@ mark.prompt {
 }
 #cursor {
   animation: blink 1.2s step-end infinite;
+  font-family: "Titillium Web", monospace;
 }
 @keyframes blink {
   from,
