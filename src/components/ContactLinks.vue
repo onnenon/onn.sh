@@ -15,14 +15,13 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: "ContactLinks"
 };
 </script>
 
-<style scoped  >
+<style scoped>
 .links {
   flex-direction: row;
   font-size: 1vw;

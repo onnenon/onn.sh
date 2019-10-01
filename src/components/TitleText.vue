@@ -1,7 +1,7 @@
 <template>
   <div class="title">
     <mark class="prompt">$</mark>
-    {{currentText}}
+    {{ currentText }}
     <div id="cursor">&#9610;</div>
   </div>
 </template>
