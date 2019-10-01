@@ -44,4 +44,9 @@ a:visited {
   color: rgb(197, 200, 206);
   text-decoration: none;
 }
+@media all and (max-width: 800px) {
+  .links {
+    font-size: 6vw;
+  }
+}
 </style>

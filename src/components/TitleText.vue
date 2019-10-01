@@ -21,7 +21,7 @@ export default {
       setTimeout(() => {
         console.log(char);
         this.currentText += char;
-      }, (time += Math.floor(Math.random() * 75) + 40));
+      }, (time += Math.floor(Math.random() * 175) + 30));
     });
   }
 };
@@ -52,6 +52,11 @@ mark.prompt {
   }
   50% {
     color: rgb(168, 171, 177);
+  }
+}
+@media all and (max-width: 800px) {
+  .title {
+    font-size: 14vw;
   }
 }
 </style>
