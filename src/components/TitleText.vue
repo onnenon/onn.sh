@@ -1,15 +1,20 @@
 <template>
   <div class="title">
-    <mark class="prompt">$</mark>
+    <PromptText />
     {{ currentText }}
     <div id="cursor">&#9610;</div>
   </div>
 </template>
 
 <script>
+import PromptText from "@/components/PromptText.vue";
+
 export default {
   name: "TitleText",
-  data() {
+  components: {
+    PromptText
+  },
+  data: () => {
     return { currentText: " " };
   },
   props: {
@@ -38,14 +43,10 @@ export default {
   flex-direction: row;
   user-select: none;
   font-family: "Overpass Mono", monospace;
-  font-size: 5vw;
+  font-size: 6em;
   font-weight: 300;
   letter-spacing: 0.01em;
   color: #f8f8f2;
-}
-mark.prompt {
-  color: #c678dd;
-  background: none;
 }
 #cursor {
   animation: blink 1.2s step-end infinite;
