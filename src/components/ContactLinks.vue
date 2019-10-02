@@ -24,9 +24,12 @@ export default {
 <style scoped>
 .links {
   flex-direction: row;
-  font-size: 1vw;
+  font-size: 2em;
   padding: 0.3em;
   justify-content: flex-start;
+}
+a {
+  outline: 0;
 }
 a:link {
   color: rgb(197, 200, 206);
