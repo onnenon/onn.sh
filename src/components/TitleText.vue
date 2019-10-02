@@ -10,19 +10,20 @@
 export default {
   name: "TitleText",
   data() {
-    return { currentText: "" };
+    return { currentText: " " };
   },
   props: {
     text: String
   },
   created() {
     let time = 0;
-    [...this.text].forEach(char => {
-      setTimeout(() => {
-        console.log(char);
-        this.currentText += char;
-      }, (time += Math.floor(Math.random() * 175) + 30));
-    });
+    setTimeout(() => {
+      [...this.text].forEach(char => {
+        setTimeout(() => {
+          this.currentText += char;
+        }, (time += Math.floor(Math.random() * 175) + 30));
+      });
+    }, 2700);
   }
 };
 </script>
