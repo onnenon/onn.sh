@@ -17,3 +17,10 @@ export default {
   }
 };
 </script>
+<style scoped>
+p {
+  font-size: 1em;
+  color: rgb(197, 200, 206);
+  max-width: 700px;
+}
+</style>
