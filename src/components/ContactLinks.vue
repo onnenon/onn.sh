@@ -1,11 +1,5 @@
 <template>
   <div class="links">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
-      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-      crossorigin="anonymous"
-    />
     <a href="https://github.com/onnenon" aria-label="Stephen Onnen's GitHub Profile">
       <font-awesome-icon :icon="['fab', 'github']" />
     </a>
