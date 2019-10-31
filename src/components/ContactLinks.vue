@@ -6,11 +6,11 @@
       integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
       crossorigin="anonymous"
     />
-    <a href="https://github.com/onnenon">
-      <i class="fab fa-github"></i>
+    <a href="https://github.com/onnenon" aria-label="Stephen Onnen's GitHub Profile">
+      <font-awesome-icon :icon="['fab', 'github']" />
     </a>
-    <a href="mailto:stephen.onnen@gmail.com">
-      <i class="far fa-envelope"></i>
+    <a href="mailto:stephen.onnen@gmail.com" aria-label="Email Stephen Onnen">
+      <font-awesome-icon icon="envelope" />
     </a>
   </div>
 </template>
