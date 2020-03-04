@@ -36,13 +36,13 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
-@import url("https://fonts.googleapis.com/css?family=Overpass+Mono:300,400");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
 
 .title {
   display: flex;
   flex-direction: row;
   user-select: none;
-  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
   font-size: 6em;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -50,7 +50,7 @@ export default {
 }
 #cursor {
   animation: blink 1.2s step-end infinite;
-  font-family: "Titillium Web", monospace;
+  font-family: "Ubuntu Mono", monospace;
 }
 @keyframes blink {
   from,
