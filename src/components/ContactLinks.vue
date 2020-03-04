@@ -1,7 +1,16 @@
 <template>
   <div class="links">
-    <a href="https://github.com/onnenon" aria-label="Stephen Onnen's GitHub Profile">
+    <a
+      href="https://github.com/onnenon"
+      aria-label="Stephen Onnen's GitHub Profile"
+    >
       <font-awesome-icon :icon="['fab', 'github']" />
+    </a>
+    <a
+      href="https://linkedin.com/in/sconnen/"
+      aria-label="Stephen Onnen's LinkedIn Profile"
+    >
+      <font-awesome-icon :icon="['fab', 'linkedin']" />
     </a>
     <a href="mailto:stephen.onnen@gmail.com" aria-label="Email Stephen Onnen">
       <font-awesome-icon icon="envelope" />
