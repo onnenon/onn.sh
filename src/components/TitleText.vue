@@ -7,15 +7,15 @@
 </template>
 
 <script>
-import PromptText from "@/components/PromptText.vue";
+import PromptText from '@/components/PromptText.vue';
 
 export default {
-  name: "TitleText",
+  name: 'TitleText',
   components: {
     PromptText
   },
   data: () => {
-    return { currentText: " " };
+    return { currentText: ' ' };
   },
   props: {
     text: String
@@ -34,15 +34,15 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
 .title {
   display: flex;
   flex-direction: row;
   user-select: none;
-  font-family: "Ubuntu Mono", monospace;
+  font-family: 'Ubuntu Mono', monospace;
   font-size: 6em;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -50,7 +50,7 @@ export default {
 }
 #cursor {
   animation: blink 1.2s step-end infinite;
-  font-family: "Ubuntu Mono", monospace;
+  font-family: 'Ubuntu Mono', monospace;
 }
 @keyframes blink {
   from,

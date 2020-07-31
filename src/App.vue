@@ -13,7 +13,7 @@ html {
   color: #f8f8f2;
   font-size: 1em;
   background-color: #272c34;
-  font-family: "Titillium Web", "Open Sans", sans-serif;
+  font-family: 'Titillium Web', 'Open Sans', sans-serif;
   padding: 0.5em;
 }
 @media all and (max-width: 800px) {

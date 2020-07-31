@@ -8,14 +8,14 @@
 
 <script>
 export default {
-  name: "PromptText",
+  name: 'PromptText',
   computed: {
     promptColor: () => {
-      let colors = ["turquoise", "blue", "red", "yellow", "green", "purple"];
+      let colors = ['turquoise', 'blue', 'red', 'yellow', 'green', 'purple'];
       return colors[Math.floor(Math.random() * colors.length)];
     },
     promptText: () => {
-      let prompts = ["$", ">", "#"];
+      let prompts = ['$', '>', '#'];
       return prompts[Math.floor(Math.random() * prompts.length)];
     }
   }
