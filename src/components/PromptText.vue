@@ -11,7 +11,7 @@ export default {
   name: 'PromptText',
   computed: {
     promptColor: () => {
-      let colors = ['turquoise', 'blue', 'red', 'yellow', 'green', 'purple'];
+      let colors = ['prime_purple', 'prime_orange'];
       return colors[Math.floor(Math.random() * colors.length)];
     },
     promptText: () => {
@@ -28,6 +28,18 @@ export default {
 }
 .prompt {
   flex-direction: column;
+}
+mark.prime_gray {
+  color: #24292e;
+  background: none;
+}
+mark.prime_orange {
+  color: #fb8532;
+  background: none;
+}
+mark.prime_purple {
+  color: #8a63d2;
+  background: none;
 }
 mark.turquoise {
   color: #56b6c2;

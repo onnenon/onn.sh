@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import ContactLinks from "@/components/ContactLinks.vue";
-import TitleText from "@/components/TitleText.vue";
+import ContactLinks from '@/components/ContactLinks.vue';
+import TitleText from '@/components/TitleText.vue';
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
     ContactLinks,
     TitleText
