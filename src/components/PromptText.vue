@@ -1,7 +1,7 @@
 <template>
   <div class="prompt_wrapper">
     <div class="prompt">
-      <mark :class="this.promptColor">{{ this.promptText }}</mark>
+      <mark :class="promptColor">{{ promptText }}</mark>
     </div>
   </div>
 </template>
