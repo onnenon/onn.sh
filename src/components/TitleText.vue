@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import PromptText from 'components/PromptText.vue'
+import PromptText from './PromptText.vue'
 
 export default defineComponent({
   name: 'TitleText',
