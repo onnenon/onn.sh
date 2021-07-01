@@ -18,10 +18,12 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ContactLinks'
-};
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'Contact Links',
+})
 </script>
 
 <style scoped>
