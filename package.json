@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "npm cache clean --force && vite build",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
