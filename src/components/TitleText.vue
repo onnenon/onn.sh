@@ -6,31 +6,35 @@
   </div>
 </template>
 
-<script>
-import PromptText from '@/components/PromptText.vue';
+<script lang="ts">
+import { defineComponent } from 'vue'
+import PromptText from 'components/PromptText.vue'
 
-export default {
+export default defineComponent({
   name: 'TitleText',
   components: {
-    PromptText
+    PromptText,
   },
-  data: () => {
-    return { currentText: ' ' };
+  data() {
+    return { currentText: ' ' }
   },
   props: {
-    text: String
+    text: {
+      type: String,
+      required: true,
+    },
   },
   created() {
-    let time = 0;
+    let time = 0
     setTimeout(() => {
-      [...this.text].forEach(char => {
+      ;[...this.text].forEach((char) => {
         setTimeout(() => {
-          this.currentText += char;
-        }, (time += Math.floor(Math.random() * 175) + 30));
-      });
-    }, 2700);
-  }
-};
+          this.currentText += char
+        }, (time += Math.floor(Math.random() * 175) + 30))
+      })
+    }, 2700)
+  },
+})
 </script>
 
 <style>
