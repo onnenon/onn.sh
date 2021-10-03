@@ -13,11 +13,11 @@ export default defineComponent({
   name: 'PromptText',
   computed: {
     promptColor() {
-      let colors = ['prime_purple', 'prime_orange']
+      let colors = ['prime_purple', 'prime_red', 'prime_green']
       return colors[Math.floor(Math.random() * colors.length)]
     },
     promptText() {
-      let prompts = ['$', '>', '#']
+      let prompts = ['$', '>', '~']
       return prompts[Math.floor(Math.random() * prompts.length)]
     },
   },
@@ -35,12 +35,20 @@ mark.prime_gray {
   color: #24292e;
   background: none;
 }
+mark.prime_green {
+  color: #3fb950;
+  background: none;
+}
 mark.prime_orange {
   color: #fb8532;
   background: none;
 }
 mark.prime_purple {
-  color: #8a63d2;
+  color: #a371f7;
+  background: none;
+}
+mark.prime_red {
+  color: #ff7b72;
   background: none;
 }
 mark.turquoise {

@@ -10,7 +10,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'App'
+  name: 'App',
 })
 </script>
 
@@ -18,9 +18,9 @@ export default defineComponent({
 body,
 html {
   display: flex;
-  color: #f8f8f2;
+  color: #f0f6fc;
   font-size: 1em;
-  background-color: #24292e;
+  background-color: #010409;
   font-family: 'Titillium Web', 'Open Sans', sans-serif;
   padding: 0.5em;
 }
