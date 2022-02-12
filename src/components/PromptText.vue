@@ -1,24 +1,20 @@
 <template>
   <div class="prompt_wrapper">
     <div class="prompt">
-      <mark :class="this.promptColor">{{ this.promptText }}</mark>
+      <mark :class="promptColor()">{{ promptText() }}</mark>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'PromptText',
-  computed: {
-    promptColor: () => {
-      let colors = ['prime_purple', 'prime_orange'];
-      return colors[Math.floor(Math.random() * colors.length)];
-    },
-    promptText: () => {
-      let prompts = ['$', '>', '#'];
-      return prompts[Math.floor(Math.random() * prompts.length)];
-    }
-  }
+<script setup lang="ts">
+const promptColor = (): string => {
+  let colors = ["prime_purple", "prime_orange"];
+  return colors[Math.floor(Math.random() * colors.length)];
+};
+
+const promptText = (): string => {
+  let prompts = ["$", ">", "#"];
+  return prompts[Math.floor(Math.random() * prompts.length)];
 };
 </script>
 

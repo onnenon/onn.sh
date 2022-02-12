@@ -18,12 +18,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ContactLinks'
-};
-</script>
-
 <style scoped>
 .links {
   flex-direction: row;

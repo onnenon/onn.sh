@@ -5,17 +5,9 @@
   </div>
 </template>
 
-<script>
-import ContactLinks from '@/components/ContactLinks.vue';
-import TitleText from '@/components/TitleText.vue';
-
-export default {
-  name: 'home',
-  components: {
-    ContactLinks,
-    TitleText
-  }
-};
+<script setup lang="ts">
+import ContactLinks from "@/components/ContactLinks.vue";
+import TitleText from "@/components/TitleText.vue";
 </script>
 <style scoped>
 p {

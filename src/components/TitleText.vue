@@ -6,43 +6,40 @@
   </div>
 </template>
 
-<script>
-import PromptText from '@/components/PromptText.vue';
+<script setup lang="ts">
+import PromptText from "@/components/PromptText.vue";
+import { defineProps, ref, onBeforeMount } from "vue";
+const props = defineProps({
+  text: {
+    type: String,
+    required: true,
+  },
+});
 
-export default {
-  name: 'TitleText',
-  components: {
-    PromptText
-  },
-  data: () => {
-    return { currentText: ' ' };
-  },
-  props: {
-    text: String
-  },
-  created() {
-    let time = 0;
-    setTimeout(() => {
-      [...this.text].forEach(char => {
-        setTimeout(() => {
-          this.currentText += char;
-        }, (time += Math.floor(Math.random() * 175) + 30));
-      });
-    }, 2700);
-  }
-};
+const currentText = ref(" ");
+
+onBeforeMount(() => {
+  let time = 0;
+  setTimeout(() => {
+    [props.text].forEach((char) => {
+      setTimeout(() => {
+        currentText.value += char;
+      }, (time += Math.floor(Math.random() * 175) + 30));
+    });
+  }, 2700);
+});
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
 
 .title {
   display: flex;
   flex-direction: row;
   user-select: none;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
   font-size: 6em;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -50,7 +47,7 @@ export default {
 }
 #cursor {
   animation: blink 1.2s step-end infinite;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
 }
 @keyframes blink {
   from,
