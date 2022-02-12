@@ -14,9 +14,9 @@ import HomePage from "@/views/HomePage.vue";
 body,
 html {
   display: flex;
-  color: #f8f8f2;
+  color: #c9d1d9;
   font-size: 1em;
-  background-color: #24292e;
+  background-color: #0d1117;
   font-family: "Titillium Web", "Open Sans", sans-serif;
   padding: 0.5em;
 }
