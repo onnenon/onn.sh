@@ -29,18 +29,18 @@ a {
   outline: 0;
 }
 a:link {
-  color: rgb(197, 200, 206);
+  color: #8b949e;
   text-decoration: none;
   padding: 1em;
 }
 a:hover {
-  color: rgb(230, 233, 239);
+  color: #f0f6fc;
 }
 a:visited:hover {
-  color: rgb(230, 233, 239);
+  color: #f0f6fc;
 }
 a:visited {
-  color: rgb(197, 200, 206);
+  color: #8b949e;
   text-decoration: none;
 }
 @media all and (max-width: 800px) {

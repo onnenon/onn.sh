@@ -8,12 +8,12 @@
 
 <script setup lang="ts">
 const promptColor = (): string => {
-  let colors = ["prime_purple", "prime_orange"];
+  let colors = ["prime_purple", "prime_red", "prime_green"];
   return colors[Math.floor(Math.random() * colors.length)];
 };
 
 const promptText = (): string => {
-  let prompts = ["$", ">", "#"];
+  let prompts = ["$", ">"];
   return prompts[Math.floor(Math.random() * prompts.length)];
 };
 </script>
@@ -24,6 +24,14 @@ const promptText = (): string => {
 }
 .prompt {
   flex-direction: column;
+}
+mark.prime_green {
+  color: #3fb950;
+  background: none;
+}
+mark.prime_red {
+  color: #f85149;
+  background: none;
 }
 mark.prime_gray {
   color: #24292e;

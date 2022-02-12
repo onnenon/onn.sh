@@ -1,14 +1,15 @@
 <template>
   <div class="title">
     <PromptText />
-    {{ currentText }}
+    {{ currentText.join("") }}
     <div id="cursor">&#9610;</div>
   </div>
 </template>
 
 <script setup lang="ts">
 import PromptText from "@/components/PromptText.vue";
-import { defineProps, ref, onBeforeMount } from "vue";
+import { ref, onMounted } from "vue";
+
 const props = defineProps({
   text: {
     type: String,
@@ -16,17 +17,16 @@ const props = defineProps({
   },
 });
 
-const currentText = ref(" ");
+const currentText = ref(new Array<string>());
 
-onBeforeMount(() => {
-  let time = 0;
+onMounted(() => {
   setTimeout(() => {
-    [props.text].forEach((char) => {
-      setTimeout(() => {
-        currentText.value += char;
-      }, (time += Math.floor(Math.random() * 175) + 30));
+    let time = 500;
+    [...props.text].forEach((char) => {
+      setTimeout(() => currentText.value.push(char), time);
+      time += Math.floor(Math.random() * 175) + 30;
     });
-  }, 2700);
+  }, 2000);
 });
 </script>
 
@@ -43,11 +43,12 @@ onBeforeMount(() => {
   font-size: 6em;
   font-weight: 300;
   letter-spacing: 0.01em;
-  color: #f8f8f2;
+  color: #c9d1d9;
 }
 #cursor {
   animation: blink 1.2s step-end infinite;
   font-family: "Ubuntu Mono", monospace;
+  color: #8b949e;
 }
 @keyframes blink {
   from,
