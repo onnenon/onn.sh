@@ -5,8 +5,8 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-  Vschedule:
-    - cron: '30 1 * * 0'
+  schedule:
+    - cron: "30 1 * * 0"
 
 jobs:
   CodeQL-Build:
